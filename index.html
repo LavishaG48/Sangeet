@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LavPlay</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="main_div">
+
+       <!-- Card containing genres -->
+      <div class="music_container category">
+        <h2 class="genreTitle">Genre</h2>
+        <div class="genre" id="Pop">
+          <h3 class="genre-heading">Pop music</h3>
+        </div>
+      </div>
+
+     <!--card containing music player -->
+      <div class="music_container">
+        <h2 class ="title">Starboy</h2>
+        <h3 id="artist">The Weeknd</h3>
+        <div class="img_container">
+          <img src="images/Pop/1.jpg" alt="Starboy">
+        </div>
+        <audio src="music/Pop/1.mp3"></audio>
+        <div class="music_controls">
+          <i class="fas fa-backward" id="prev" title="Previous"></i>
+          <i class="fas fa-play main_button" title="Play" id="play"></i>
+          <i class="fas fa-forward" id="next" title="Next"></i>
+        </div>
+      </div>
+
+      <!-- Card containing playlist -->
+      <div class="music_container playlist">
+        <div class="playlistTitle">
+          <h2 class="list">Playlist <i class="fas fa-play" title="Play-All" id="playAll"></i></h2>
+        </div>
+
+        <div id = "playlistContent">
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
